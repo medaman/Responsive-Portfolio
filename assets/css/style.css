@@ -296,7 +296,7 @@ MEDIA QUERIES - RESPONSIVE
   	clear:both;
   	display:block;
   	text-align: center;
-  	margin:10px 0px;
+  	margin: 5px 0px -5px 0px ;
   }
 
   nav ul li {
@@ -311,7 +311,7 @@ MEDIA QUERIES - RESPONSIVE
 	}
 
   #bodyLeft {
-  	margin-top:80px;
+  	margin-top:10px;
   	margin-bottom:10px;
   }
 
@@ -319,4 +319,13 @@ MEDIA QUERIES - RESPONSIVE
   	width:100%;
   }
   
+  header, footer {
+  	position:static;
+  	border:0px;
+  }
+
+  #mainBody {
+  	padding-bottom:0px;
+  }
+
 }
