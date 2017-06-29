@@ -14,10 +14,11 @@ header{
 	left:0;
 	width: 100%;
 	background:white;
+	z-index: 2;
 }
 
 h1, h2{
-	font-size:30px;
+	font-size:20px;
 	font-family: Georgia;
 	font-weight: bold;
 }
@@ -25,7 +26,7 @@ h1, h2{
 h1 {
 	color:#fff;
 	margin-left:20%;
-	padding:20px 20px;
+	padding:10px 10px;
 	float:left;
 	background:#4aa8a2;
 }
@@ -47,19 +48,19 @@ h3 {
 	color:#38857f;
 }
 
-li {
+nav ul li {
 	display:inline;
 	padding: 0px 5px;
 	border-right:1px solid #ddd;
 }
 
-li:last-child {
+nav ul li:last-child {
 	border-right:0px;
 }
 
 nav {
 	margin-right: 20%;
-	padding-top: 25px;
+	padding-top: 12px;
 	float:right;
 	color:#ddd;
 }
@@ -67,7 +68,7 @@ nav {
 nav > ul > li > a{
 	color:#777;
 	text-decoration: none;
-	padding:5px;
+	padding:0px 5px;
 	font-size:17px;
 }
 
@@ -81,7 +82,7 @@ nav > ul > li > a:hover {
 	background-image: url("../images/black-textile-pattern.jpg");
 	padding-bottom:50px;
 	min-height:90vh;
-	margin-top: 50px;
+	margin-top: 25px;
 }
 
 #bodyLeft {
@@ -167,14 +168,6 @@ footer {
 	border-top:7px solid #4aa8a2;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    #bodyRight, #bodyLeft {
-        width: 100%;
-        margin: 0px;
-		}
-}
-
 .clearfix {
 	clear:both;
 }
@@ -247,4 +240,83 @@ PORTFOLIO - CSS
   -webkit-box-shadow: 0px 0px 30px #000;
   -moz-box-shadow: 0px 0px 30px #000;
   box-shadow: 0px 0px 30px #000;
+}
+
+/***************************************************************
+MEDIA QUERIES - RESPONSIVE
+***************************************************************/
+@media only screen and (max-width: 980px) and (min-width: 768px)  {
+    /* For large monitors */
+    /* Page designed for larger screens. */
+	
+}
+
+@media only screen and (max-width: 768px){
+  /* For medium sized monitors */
+  nav, h1 {
+  	margin-left: 5%;
+  	margin-right: 5%;
+  }
+
+  #bodyRight, #bodyLeft {
+      width: 94%;
+      margin-right:5%;
+      margin-left:5%;
+	}
+
+	.socialIcons {
+		width: 50px;
+	}
+
+	.socialIcons:hover {
+		background:#4aa8a2;
+	  border: 2px solid #ccc;
+	  width:60px;
+	  margin: 1%;
+	  -webkit-transition: all .5s ease-out;
+	  -moz-transition: all .5s ease-out;
+	  -o-transition: all .5s ease-out;
+	  -webkit-box-shadow: 0px 0px 30px #000;
+	  -moz-box-shadow: 0px 0px 30px #000;
+	  box-shadow: 0px 0px 30px #000;
+	}
+
+	#bodyRight {
+		margin-top:10px;
+		margin-bottom:30px;
+		text-align:left;
+	}
+	
+}
+
+@media only screen and (max-width: 640px) {
+  /* For mobile phones */
+  nav {
+  	width:100%;
+  	clear:both;
+  	display:block;
+  	text-align: center;
+  	margin:10px 0px;
+  }
+
+  nav ul li {
+  	margin: 0px 5%;
+  	border:0px;
+  }
+	
+	h1 {
+		width:100%;
+		margin:0px;
+		text-align:center;
+	}
+
+  #bodyLeft {
+  	margin-top:80px;
+  	margin-bottom:10px;
+  }
+
+  #bodyLeft img {
+  	width:100%;
+  }
+  
 }
